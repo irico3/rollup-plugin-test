@@ -1,10 +1,10 @@
-import json from "@rollup/plugin-json";
+import myExample from "./src/rollup-plugin-my-example.js";
 
 export default {
-  input: "src/main.js",
+  input: "virtual-module",
   output: {
     file: "bundle.js",
-    format: "cjs",
+    format: "es",
   },
-  plugins: [json()],
+  plugins: [myExample()],
 };

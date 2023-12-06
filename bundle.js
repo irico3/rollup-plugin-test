@@ -1,9 +1,3 @@
-'use strict';
+var virtualModule = "This is virtual!";
 
-var version = "1.0.0";
-
-function main () {
-  console.log("version " + version);
-}
-
-module.exports = main;
+export { virtualModule as default };

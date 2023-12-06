@@ -3,6 +3,7 @@ export default function myExample() {
     name: "my-example",
     resolveId(source) {
       if (source === "virtual-module") {
+        console.log(this.resolve(source));
         return source;
       }
       return null;
